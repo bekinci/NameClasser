@@ -1,0 +1,2 @@
+# NameClasser
+Classifier for strings
