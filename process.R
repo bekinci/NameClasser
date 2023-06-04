@@ -42,8 +42,7 @@ wall_graph <- graph_from_data_frame(graph_prep , directed = F)
 
 plot.igraph(wall_graph)
 
-
-cluster_edge_betweenness(wall_graph, weights = E(wall_graph)$weight, directed = F)
+wall_clust <- cluster_edge_betweenness(wall_graph, weights = E(wall_graph)$weight, directed = F)
 
 edge.betweenness.community(wall_graph, weights = E(wall_graph)$weight, directed = F) %>%  plot()
 
