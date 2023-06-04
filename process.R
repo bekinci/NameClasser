@@ -11,7 +11,22 @@ clean_walls <- clean_walls %>%
   filter(!grepl("concept", token)) %>% 
   mutate(token = str_replace_all(token, "wall", ""))
 
+#BASE ADIST() METHOD#
 
+walls_dist <- adist(clean_walls$token)
+colnames(walls_dist) <- clean_walls$Type
+rownames(walls_dist) <- clean_walls$Type
+
+wall_clust <- hclust(as.dist(walls_dist))
+
+plot(wall_clust, main = NULL, sub = NULL, xlab = NULL, ylab= NULL)
+
+library(ape)
+library(cluster)
+plot(as.phylo(wall_clust), type = "fan")
+
+
+#STRINGDIST METHOD#
 library(stringdist)
 
 expand_wall <- expand.grid(clean_walls$token,clean_walls$token) %>% 
@@ -31,9 +46,29 @@ wall_lcs <- expand_wall %>%
 wall_jw <- expand_wall %>% 
   mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "jw")) 
 
+mat_lv <- wall_lv %>%  
+  spread(key = Var1, value = as.numeric(sim)) %>%  
+  replace(is.na(.),0) %>%
+  as.matrix()
 
+mat_lv <- mat_lv[ ,colnames(mat_lv)!="Var2"]
+mat_lv[lower.tri(mat_lv, diag = F)] <- 0
+mat_lv <- matrix(as.numeric(mat_lv), ncol(mat_lv))
+
+colnames(mat_lv) <- unique(wall_lv$Var1)
+rownames(mat_lv) <- colnames(mat_lv)
+heatmap(mat_lv)
+
+
+#### NETWORK GRAPH ####
 library(igraph)
 
+#BY MATRIX#
+graph_matlv <- graph.adjacency(mat_lv, mode = "undirected", weighted = T)
+matlv_clust <- cluster_edge_betweenness(graph_matlv, weights = E(graph_matlv)$weight, directed = F)
+
+
+#BY DATA FRAME#
 graph_prep <- wall_lv %>% 
   filter(sim != 0) %>% 
   rename(weight = sim) 
@@ -46,26 +81,3 @@ wall_clust <- cluster_edge_betweenness(wall_graph, weights = E(wall_graph)$weigh
 
 edge.betweenness.community(wall_graph, weights = E(wall_graph)$weight, directed = F) %>%  plot()
 
-# library(ggridges)
-# 
-# expand_wall %>% 
-#   mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "lv")) %>% 
-#   #filter(Var1 == "concrete cast insitu") %>% 
-#   ggplot(aes(x = sim, y= Var1)) +
-#   geom_density_ridges2()
-# 
-# expand_wall %>% 
-#   mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "osa")) %>% 
-#   group_by(Var1) %>% 
-#   filter(sim != 1) %>% 
-#   #slice(which.max(sim)) %>% 
-#   arrange(-sim) %>% View()
-# 
-# df_expand <- expand.grid(uniq_token$token,uniq_token$token)
-# 
-# df_expand %>% 
-#   mutate(sim = stringsim(df_expand$Var1,df_expand$Var2, method = "jw")) %>% 
-#   group_by(Var1) %>% 
-#   filter(sim != 1) %>% 
-#   slice(which.max(sim)) %>% 
-#   arrange(-sim)
