@@ -66,6 +66,14 @@ library(igraph)
 #BY MATRIX#
 graph_matlv <- graph.adjacency(mat_lv, mode = "undirected", weighted = T)
 matlv_clust <- cluster_edge_betweenness(graph_matlv, weights = E(graph_matlv)$weight, directed = F)
+saveRDS(matlv_clust, "graph_cluster.RDS")
+
+plot(matlv_clust, graph_matlv, 
+     layout =  layout.fruchterman.reingold, 
+     vertex.size = 0.1,  
+     vertex.label.cex = 1, 
+     vertex.color = "white", 
+     vertex.shape = "none")
 
 
 #BY DATA FRAME#
