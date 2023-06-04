@@ -4,58 +4,69 @@ library(tidytext)
 
 here::here()
 
-readRDS("data.rds")
+load("data.RData")
 
-uniq_wall <- df_all %>% 
-  filter(Category == "Walls") %>% 
-  distinct(Type) 
-
-clean_walls <- uniq_wall %>% 
-  mutate(token = str_replace_all(Type, "_"," ")) %>% 
-  mutate(token = str_remove_all(token, "[0-9]+mm")) %>%  
-  mutate(token = str_remove_all(token, "[0-9]+MM")) %>% 
-  mutate(token = trimws(token, "both")) 
-
-
-
-
-df_token <- uniq_wall %>% 
-  mutate(word = str_replace_all(Type, "[[:punct:]]", " ")) %>% 
-  mutate(word = str_replace_all(word, "[[:digit:]]", " ")) %>% 
-  mutate(word = str_remove_all(word, "_")) %>% 
-  mutate(word = str_remove_all(word, "mm")) %>% 
-  unnest_tokens(token, word, drop = F) %>% 
-  filter(nchar(token) > 2) %>% 
-  select(Type, token)
-
-uniq_token <- df_token %>% 
-  distinct(token)
+clean_walls <- clean_walls %>% 
+  mutate(token = tolower(token)) %>% 
+  filter(!grepl("concept", token)) %>% 
+  mutate(token = str_replace_all(token, "wall", ""))
 
 
 library(stringdist)
 
-expand_wall <- expand.grid(clean_walls$token,clean_walls$token) 
+expand_wall <- expand.grid(clean_walls$token,clean_walls$token) %>% 
+  filter(Var1 != Var2) %>% 
+  distinct(Var1, Var2, .keep_all = T)
+
+#The Levenshtein distance
+wall_lv <- expand_wall %>% 
+  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "lv")) 
+#The Optimal String Alignment distance
+wall_osa <- expand_wall %>% 
+  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "osa")) 
+#The longest common substring
+wall_lcs <- expand_wall %>% 
+  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "lcs")) 
+#The Jaro distance
+wall_jw <- expand_wall %>% 
+  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "jw")) 
 
 
-expand_wall %>% 
-  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "lcs")) %>% 
-  group_by(Var1) %>% 
-  filter(sim != 0,sim != 1) %>% 
-  #slice(which.max(sim)) %>% 
-  arrange(-sim) %>% View()
+library(igraph)
 
-expand_wall %>% 
-  mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "osa")) %>% 
-  group_by(Var1) %>% 
-  filter(sim != 1) %>% 
-  #slice(which.max(sim)) %>% 
-  arrange(-sim) %>% View()
+graph_prep <- wall_lv %>% 
+  filter(sim != 0) %>% 
+  rename(weight = sim) 
 
-df_expand <- expand.grid(uniq_token$token,uniq_token$token)
+wall_graph <- graph_from_data_frame(graph_prep , directed = F)
 
-df_expand %>% 
-  mutate(sim = stringsim(df_expand$Var1,df_expand$Var2, method = "jw")) %>% 
-  group_by(Var1) %>% 
-  filter(sim != 1) %>% 
-  slice(which.max(sim)) %>% 
-  arrange(-sim)
+plot.igraph(wall_graph)
+
+
+cluster_edge_betweenness(wall_graph, weights = E(wall_graph)$weight, directed = F)
+
+edge.betweenness.community(wall_graph, weights = E(wall_graph)$weight, directed = F) %>%  plot()
+
+# library(ggridges)
+# 
+# expand_wall %>% 
+#   mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "lv")) %>% 
+#   #filter(Var1 == "concrete cast insitu") %>% 
+#   ggplot(aes(x = sim, y= Var1)) +
+#   geom_density_ridges2()
+# 
+# expand_wall %>% 
+#   mutate(sim = stringsim(as.character(Var1), as.character(Var2), method = "osa")) %>% 
+#   group_by(Var1) %>% 
+#   filter(sim != 1) %>% 
+#   #slice(which.max(sim)) %>% 
+#   arrange(-sim) %>% View()
+# 
+# df_expand <- expand.grid(uniq_token$token,uniq_token$token)
+# 
+# df_expand %>% 
+#   mutate(sim = stringsim(df_expand$Var1,df_expand$Var2, method = "jw")) %>% 
+#   group_by(Var1) %>% 
+#   filter(sim != 1) %>% 
+#   slice(which.max(sim)) %>% 
+#   arrange(-sim)
