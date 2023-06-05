@@ -1,0 +1,240 @@
+"";"Type";"token";"cluster"
+"1";"Glazing_Residential Facade";"glazing residential facade";1
+"2";"Glazing_Residential Facade_East";"glazing residential facade east";1
+"3";"Glazing_Residential Facade_Penthouse_350mm";"glazing residential facade penthouse";1
+"4";"LV05 Shear Wall Make-up Panel";"lv05 shear  make-up panel";1
+"5";"Glazing_Residential Facade_Podium_350mm";"glazing residential facade podium";1
+"6";"Curtain Wall 1";"curtain  1";2
+"7";"Glazing_Facade_Podium_270mm";"glazing facade podium";1
+"8";"Glazing_Plant Louvre";"glazing plant louvre";1
+"9";"Glazing_10.0mm Face";"glazing 10. face";1
+"10";"Corner Column Cladding";"corner column cladding";1
+"11";"Blockwork_Core Filled_190mm";"blockwork core filled";1
+"12";"Concrete_Cast Insitu_150mm";"concrete cast insitu";2
+"13";"Glazing_Residential Facade_East_300mm";"glazing residential facade east";1
+"14";"Glazing_6.0mm Centre";"glazing 6. centre";1
+"15";"L8c - STUD LINING IMPACT";"l8c - stud lining impact";3
+"16";"PF10c/F120 - FIRE RATED STUD PARTITION";"pf10c/f120 - fire rated stud partition";4
+"17";"P10d - STUD PARTITION IMPACT / FC";"p10d - stud partition impact / fc";5
+"18";"P8c - STUD PARTITION IMPACT 2 SIDES";"p8c - stud partition impact 2 sides";5
+"19";"P18c/A45 - STUD PARTITION ACOUSTIC FC 1 SIDE";"p18c/a45 - stud partition acoustic fc 1 side";5
+"20";"IWS-301_RW35_Internal Glazing_Sapphire Maxline 116x45";"iws-301 rw35 internal glazing sapphire maxline 116x45";1
+"21";"L8a/T1.0 - STUD LINING";"l8a/t1.0 - stud lining";3
+"22";"P5c/A45* - STUD PARTITION FC 2 SIDES";"p5c/a45* - stud partition fc 2 sides";5
+"23";"Brick veneer facade";"brick veneer facade";1
+"24";"Screen";"screen";2
+"25";"P15c/A45 - STUD PARTITION IMPACT 1 SIDE";"p15c/a45 - stud partition impact 1 side";5
+"26";"Concrete_200mm";"concrete";2
+"27";"P4c - STUD PARTITION FC 1 SIDE";"p4c - stud partition fc 1 side";5
+"28";"Glazing_Sapphire Maxline 116x45";"glazing sapphire maxline 116x45";1
+"29";"Concrete_250mm";"concrete";2
+"30";"Concrete_190mm";"concrete";2
+"31";"Concrete_150mm";"concrete";2
+"32";"Glazing_Commercial Suite_Roof Pavilion";"glazing commercial suite roof pavilion";1
+"33";"L16c/A45* - STUD LINING ACOUSTIC";"l16c/a45* - stud lining acoustic";5
+"34";"P10c - STUD PARTITION IMPACT / FC";"p10c - stud partition impact / fc";5
+"35";"L10d/A45* - STUD LINING FC";"l10d/a45* - stud lining fc";3
+"36";"L7a - BATTEN LINING IMPACT";"l7a - batten lining impact";3
+"37";"P55 - STAGGERED STUD PARTITION";"p55 - staggered stud partition";4
+"38";"L8d - STUD LINING IMPACT";"l8d - stud lining impact";3
+"39";"Concrete_300mm";"concrete";2
+"40";"L10d/A35* - STUD LINING FC";"l10d/a35* - stud lining fc";3
+"41";"P5d/A40 - STUD PARTITION FC 2 SIDES";"p5d/a40 - stud partition fc 2 sides";5
+"42";"IWS-302_RW45_Internal Glazing_Sapphire Maxline 116x45";"iws-302 rw45 internal glazing sapphire maxline 116x45";1
+"43";"P1d/A40 - STUD PARTITION";"p1d/a40 - stud partition";4
+"44";"L12d/A45* - STUD LINING";"l12d/a45* - stud lining";3
+"45";"L10d/A40* - STUD LINING FC";"l10d/a40* - stud lining fc";3
+"46";"L10d - STUD LINING FC";"l10d - stud lining fc";3
+"47";"P10c/A45* - STUD PARTITION IMPACT / FC";"p10c/a45* - stud partition impact / fc";5
+"48";"P74c/A55 - DOUBLE STUD PARTITION  IMPACT 2 SIDES";"p74c/a55 - double stud partition  impact 2 sides";5
+"49";"P5c - STUD PARTITION FC 2 SIDES";"p5c - stud partition fc 2 sides";5
+"50";"IWS-302_RW40_Internal Glazing_Sapphire Maxline 116x45";"iws-302 rw40 internal glazing sapphire maxline 116x45";1
+"51";"ILS-401 - TILE FINISH";"ils-401 - tile finish";1
+"52";"L9a - BATTEN LINING FC";"l9a - batten lining fc";6
+"53";"L5# - DIRECT FIX FIRE RATED LINING";"l5# - direct fix fire rated lining";6
+"54";"P8d/A40 - STUD PARTITION IMPACT 2 SIDES";"p8d/a40 - stud partition impact 2 sides";5
+"55";"LF21d/F120 - FIRE RATED STUD LINING";"lf21d/f120 - fire rated stud lining";6
+"56";"L8c/A45* - STUD LINING IMPACT";"l8c/a45* - stud lining impact";3
+"57";"LF21c/F120 - FIRE RATED STUD LINING";"lf21c/f120 - fire rated stud lining";6
+"58";"LB2 - 18mm PLYWOOD STUD LINING";"lb2 -  plywood stud lining";6
+"59";"P4e/A40 - STUD PARTITION FC 1 SIDE";"p4e/a40 - stud partition fc 1 side";5
+"60";"L1a - BATTEN LINING";"l1a - batten lining";6
+"61";"L12c/A40 - STUD LINING";"l12c/a40 - stud lining";3
+"62";"18_toilet partition";"18 toilet partition";4
+"63";"L12d - STUD LINING";"l12d - stud lining";3
+"64";"L8d/A45* - STUD LINING IMPACT";"l8d/a45* - stud lining impact";3
+"65";"BAL - 107_WALKWAY";"bal - 107 walkway";1
+"66";"CLD-501 - 18mm PLYWOOD BATTEN LINING";"cld-501 -  plywood batten lining";6
+"67";"Bulkhead Wall_50mm";"bulkhead ";2
+"68";"L2c/A45* - STUD LINING";"l2c/a45* - stud lining";3
+"69";"CLD-xxx - Pinboard";"cld-xxx - pinboard";1
+"70";"GLASS WALL";"glass ";2
+"71";"Concrete_400mm";"concrete";2
+"72";"L2d - STUD LINING";"l2d - stud lining";3
+"73";"CLD-401 - CERAMIC CLADDING";"cld-401 - ceramic cladding";1
+"74";"JOI-xxx_STEM ART SPACE JOINERY 300D";"joi-xxx stem art space joinery 300d";1
+"75";"AUDITORIUM BATTENS";"auditorium battens";1
+"76";"JOI-xxx_ THEATRE BAND CURVED";"joi-xxx  theatre band curved";1
+"77";"CON_Concrete Retaining Wall_350mm";"con concrete retaining ";2
+"78";"EXT WALL_FCDT-204  FC FACADE MORTARY BUILDING & L2 PODIUM";"ext  fcdt-204  fc facade mortary building & l2 podium";1
+"79";"EXT WALL_FCDT-00XX FC FACADE PODIUM WITH INTEGRATED FINS";"ext  fcdt-00xx fc facade podium with integrated fins";1
+"80";"CON_Concrete Wall_350mm_F120";"con concrete   f120";2
+"81";"EXT WALL_FCDT-501_METAL CLADDING (25MM/70MMCAVITY/6MM T.B/6MM RAB";"ext  fcdt-501 metal cladding (/cavity/ t.b/ rab";1
+"82";"BLBL-101 - BLOCK WALL_Core Filled_FRL";"blbl-101 - block  core filled frl";1
+"83";"EXTERNAL WALL_FRAME_150MM STUD/10MM TOLERANCE";"external  frame  stud/ tolerance";1
+"84";"EXT WALL_FCDT-104 BRICK";"ext  fcdt-104 brick";1
+"85";"EXT WALL_FCDT-105 BRICK LARGER CAVITY";"ext  fcdt-105 brick larger cavity";1
+"86";"EXT WALL_FCDT-101 BRICK FEATURE PATTERN";"ext  fcdt-101 brick feature pattern";1
+"87";"CON_Concrete Wall_250mm_F120";"con concrete   f120";2
+"88";"CON_Concrete Wall_300mm_FRL 120";"con concrete   frl 120";2
+"89";"P7d/A35 - STUD PARTITION IMPACT 1 SIDE";"p7d/a35 - stud partition impact 1 side";5
+"90";"PF10d/F120/A50 - FIRE RATED STUD PARTITION";"pf10d/f120/a50 - fire rated stud partition";4
+"91";"PF10d/F120 - FIRE RATED STUD PARTITION";"pf10d/f120 - fire rated stud partition";4
+"92";"P16d/A50 - STUD PARTITION ACOUSTIC";"p16d/a50 - stud partition acoustic";5
+"93";"P11d/A45 - STUD PARTITION";"p11d/a45 - stud partition";4
+"94";"P7d - STUD PARTITION IMPACT 1 SIDE";"p7d - stud partition impact 1 side";5
+"95";"P2d/A40 - STUD PARTITION WET 1 SIDE";"p2d/a40 - stud partition wet 1 side";5
+"96";"BLBL-101 - BLOCK WALL_Core Filled";"blbl-101 - block  core filled";1
+"97";"P15d/A45 - STUD PARTITION IMPACT 1 SIDE";"p15d/a45 - stud partition impact 1 side";5
+"98";"P1d/A35 - STUD PARTITION";"p1d/a35 - stud partition";4
+"99";"P8d - STUD PARTITION IMPACT 2 SIDES";"p8d - stud partition impact 2 sides";5
+"100";"CON_Concrete Wall_200mm_F120";"con concrete   f120";2
+"101";"EXTERNAL WALL_FRAME FIRE RATED 150MM STUD";"external  frame fire rated  stud";1
+"102";"L1c - BATTEN LINING";"l1c - batten lining";6
+"103";"LF35/F120 - FIRE RATED SHAFT WALL";"lf35/f120 - fire rated shaft ";6
+"104";"P12d/A45 - STUD PARTITION WET 1 SIDE";"p12d/a45 - stud partition wet 1 side";5
+"105";"P12d/A40 - STUD PARTITION WET 1 SIDE";"p12d/a40 - stud partition wet 1 side";5
+"106";"L2b - STUD LINING";"l2b - stud lining";3
+"107";"STRUCTURE_1200 Wide Concrete";"structure 1200 wide concrete";1
+"108";"P61d - DOUBLE STUD PARTITION";"p61d - double stud partition";4
+"109";"EXT WALL_FCDT-201 FC FACADE L3-L7";"ext  fcdt-201 fc facade l3-l7";1
+"110";"LXX - STUD LINING - EXTERNAL WALL";"lxx - stud lining - external ";3
+"111";"L8d/A35* - STUD LINING IMPACT";"l8d/a35* - stud lining impact";3
+"112";"P7d/A40 - STUD PARTITION IMPACT 1 SIDE";"p7d/a40 - stud partition impact 1 side";5
+"113";"EXTERNAL WINDOW WALL_FCDT-300 SYSTEM - SPINE";"external window  fcdt-300 system - spine";1
+"114";"L2d/A40* - STUD LINING";"l2d/a40* - stud lining";3
+"115";"L2d/A35* - STUD LINING";"l2d/a35* - stud lining";3
+"116";"P1d - STUD PARTITION";"p1d - stud partition";4
+"117";"P9d - STUD PARTITION IMPACT / WET";"p9d - stud partition impact / wet";5
+"118";"BLBL-102 - BLOCK WALL_Core Filled";"blbl-102 - block  core filled";1
+"119";"CON_Concrete Wall_300mm";"con concrete ";2
+"120";"EXT WALL_FCDT-102 BRICK VERTICAL COURSING TOP BAND";"ext  fcdt-102 brick vertical coursing top band";1
+"121";"EXT WALL_FCDT-106 BRICK VERTICAL COURSING TOP BAND top cavity";"ext  fcdt-106 brick vertical coursing top band top cavity";1
+"122";"CON_Concrete Shear Wall_200mm";"con concrete shear ";2
+"123";"P9d/A40 - STUD PARTITION IMPACT / WET";"p9d/a40 - stud partition impact / wet";5
+"124";"P2d/A35 - STUD PARTITION WET 1 SIDE";"p2d/a35 - stud partition wet 1 side";5
+"125";"L4d - STUD LINING WET";"l4d - stud lining wet";3
+"126";"L7c - BATTEN LINING IMPACT";"l7c - batten lining impact";3
+"127";"L8b - STUD LINING IMPACT";"l8b - stud lining impact";3
+"128";"L4d/A40* - STUD LINING WET";"l4d/a40* - stud lining wet";3
+"129";"P2d - STUD PARTITION WET 1 SIDE";"p2d - stud partition wet 1 side";5
+"130";"P3d/A40 - STUD PARTITION WET 2 SIDES";"p3d/a40 - stud partition wet 2 sides";5
+"131";"L4b - STUD LINING WET";"l4b - stud lining wet";3
+"132";"P9d/A35 - STUD PARTITION IMPACT / WET";"p9d/a35 - stud partition impact / wet";5
+"133";"L4d/A35* - STUD LINING WET";"l4d/a35* - stud lining wet";3
+"134";"P13d/A45 - STUD PARTITION WET 2 SIDES";"p13d/a45 - stud partition wet 2 sides";5
+"135";"PF27a/F120/A55 - FIRE RATED STAGGERED STUD PARTITION";"pf27a/f120/a55 - fire rated staggered stud partition";4
+"136";"L3c - BATTEN LINING WET";"l3c - batten lining wet";6
+"137";"P16d/A55 - STUD PARTITION ACOUSTIC";"p16d/a55 - stud partition acoustic";5
+"138";"Existing_120mm";"existing";2
+"139";"EXT_GLAZING_FCDT-400_6.0mm Centre";"ext glazing fcdt-400 6. centre";1
+"140";"L2d/A45* - STUD LINING";"l2d/a45* - stud lining";3
+"141";"L8d/A40* - STUD LINING IMPACT";"l8d/a40* - stud lining impact";3
+"142";"P8d/A35 - STUD PARTITION IMPACT 2 SIDES";"p8d/a35 - stud partition impact 2 sides";5
+"143";"PF10d/F120/A45 - FIRE RATED STUD PARTITION";"pf10d/f120/a45 - fire rated stud partition";4
+"144";"LF9# - DIRECT FIX FIRE RATED LINING";"lf9# - direct fix fire rated lining";6
+"145";"CON_Concrete Wall_225mm";"con concrete ";2
+"146";"Concrete_Cast Insitu_Structural Upstand";"concrete cast insitu structural upstand";2
+"147";"Feature Wall Colour";"feature  colour";1
+"148";"L2 Lift Core Feature Wall 4";"l2 lift core feature  4";1
+"149";"L2 Lift Core Feature Wall 1";"l2 lift core feature  1";1
+"150";"L2 Lift Core Feature Wall Skirt";"l2 lift core feature  skirt";1
+"151";"EXTERNAL_FC FACADE L3-L7 HIGHLIGHTS - DO NOT TAG";"external fc facade l3-l7 highlights - do not tag";1
+"152";"EXTERNAL_PODIUM SCREEN_SCRN-401";"external podium screen scrn-401";1
+"153";"Walls 3";"s 3";2
+"154";"EXT WALL_FCDT-303 FC SPANDRAL MAIN ENTRANCE SPINE";"ext  fcdt-303 fc spandral main entrance spine";1
+"155";"EXT WALL_FCDT-201";"ext  fcdt-201";1
+"156";"EXTERNAL_PODIUM SCREEN_SCRN-402";"external podium screen scrn-402";1
+"157";"EXTERNAL_PODIUM SCREEN_TS";"external podium screen ts";1
+"158";"EXT WALL_FCDT-103 RECESSED BRICK";"ext  fcdt-103 recessed brick";1
+"159";"L2 Lift Core Feature Wall White";"l2 lift core feature  white";1
+"160";"INTERNAL_Plant Room Mesh Wall";"internal plant room mesh ";1
+"161";"LF9a - FIRE RATED BATTEN LINING";"lf9a - fire rated batten lining";6
+"162";"LAMINATE SPLASHBACK BASIN TYPE B";"laminate splashback basin type b";1
+"163";"CON_Concrete Wall_150mm";"con concrete ";2
+"164";"EXTERNAL_Chain Wire Mesh Fence_unconstrained";"external chain wire mesh fence unconstrained";1
+"165";"Brickwork_Single_110mm";"brickwork single";1
+"166";"L15 - PLANT FACADE LINING";"l15 - plant facade lining";6
+"167";"P7e/A35 - STUD PARTITION IMPACT 1 SIDE";"p7e/a35 - stud partition impact 1 side";5
+"168";"Curtain Wall - Spine_see Brett_no grids";"curtain  - spine see brett no grids";1
+"169";"L1# - DIRECT FIX LINING";"l1# - direct fix lining";6
+"170";"Brickwork_120mm";"brickwork";1
+"171";"P11d/A40 - STUD PARTITION";"p11d/a40 - stud partition";4
+"172";"L4d/A45* - STUD LINING WET";"l4d/a45* - stud lining wet";3
+"173";"P12d/A35 - STUD PARTITION WET 1 SIDE";"p12d/a35 - stud partition wet 1 side";5
+"174";"EXTERNAL_PODIUM SCREEN_BSBS-110";"external podium screen bsbs-110";1
+"175";"L12e/A45* - STUD LINING";"l12e/a45* - stud lining";3
+"176";"B1d/V1 - BLOCK WALL";"b1d/v1 - block ";1
+"177";"Concrete_Cast Insitu_250mm";"concrete cast insitu";2
+"178";"P61d/A45 - DOUBLE STUD PARTITION";"p61d/a45 - double stud partition";4
+"179";"Charred Timber_1200mm Intervals";"charred timber  intervals";1
+"180";"EWS-103 - 110mm";"ews-103 -";2
+"181";"EWS-101A - Charred Timber";"ews-101a - charred timber";1
+"182";"P1e/A35 - STUD PARTITION";"p1e/a35 - stud partition";4
+"183";"STR_600 - SHOARING WALL";"str 600 - shoaring ";1
+"184";"Charred Timber_100x70_600mm Intervals";"charred timber 100x70  intervals";1
+"185";"P21e/A45 - STUD PARTITION";"p21e/a45 - stud partition";4
+"186";"EWS-103 - 600mm - Flemish Bond";"ews-103 -  - flemish bond";1
+"187";"EWS-140 - GLAZING SYSTEM 2000Centres";"ews-140 - glazing system 2000centres";1
+"188";"EWS-105 - GLAZING SYSTEM";"ews-105 - glazing system";1
+"189";"WIN - 101 - GLAZING SYSTEM";"win - 101 - glazing system";1
+"190";"PM4/A35 - STUD PARTITION";"pm4/a35 - stud partition";4
+"191";"Partition Type 1 - P1d/XX";"partition type 1 - p1d/xx";1
+"192";"P21d/A50 - STUD PARTITION";"p21d/a50 - stud partition";4
+"193";"P3d - STUD PARTITION WET 2 SIDES";"p3d - stud partition wet 2 sides";5
+"194";"P12e/A45 - STUD PARTITION WET 1 SIDE";"p12e/a45 - stud partition wet 1 side";5
+"195";"P22e/A45 - STUD PARTITION WET 1 SIDE";"p22e/a45 - stud partition wet 1 side";5
+"196";"P11e/A45 - STUD PARTITION";"p11e/a45 - stud partition";4
+"197";"PF11d/F120/A50 - FIRE RATED STUD PARTITION WET 1 SIDE";"pf11d/f120/a50 - fire rated stud partition wet 1 side";4
+"198";"P22d/A50 - STUD PARTITION WET 1 SIDE";"p22d/a50 - stud partition wet 1 side";5
+"199";"Charred Timber_600mm Intervals";"charred timber  intervals";1
+"200";"Charred Timber_600mm Intervals - Corners";"charred timber  intervals - corners";1
+"201";"EWS - 110 - Charred Timber_600mm Intervals";"ews - 110 - charred timber  intervals";1
+"202";"P1e/A40 - STUD PARTITION";"p1e/a40 - stud partition";4
+"203";"Concrete - 300mm";"concrete -";2
+"204";"L2d/T1.5 - STUD LINING";"l2d/t1.5 - stud lining";3
+"205";"LB1# - 18mm OSB BATTEN LINING";"lb1# -  osb batten lining";6
+"206";"L2b/35* - STUD LINING";"l2b/35* - stud lining";3
+"207";"EWS-103 - PERFORATED BRICK CURTAIN WALL - FLEMISH";"ews-103 - perforated brick curtain  - flemish";1
+"208";"EWS-103 - PERFORATED BRICK CURTAIN WALL";"ews-103 - perforated brick curtain ";1
+"209";"EWS-103 - 600mm - Stretcher Bond";"ews-103 -  - stretcher bond";1
+"210";"EWS - 141 - 380mm - TPZ - Windows Seat";"ews - 141 -  - tpz - windows seat";1
+"211";"EWS-130 - Charred Timber_100x70_600mm Intervals_Temp-Test 2";"ews-130 - charred timber 100x70  intervals temp-test 2";1
+"212";"01_Facade GLASS BEHIND TIMBER FIN 1500 Intervals";"01 facade glass behind timber fin 1500 intervals";1
+"213";"LB3# - 18mm PLYWOOD BATTEN LINING";"lb3# -  plywood batten lining";6
+"214";"Concrete_Cast Insitu_200mm";"concrete cast insitu";2
+"215";"EWS-103 - 300mm - Flemish Bond";"ews-103 -  - flemish bond";1
+"216";"P11d/A35 - STUD PARTITION";"p11d/a35 - stud partition";4
+"217";"LB5 - 18mm PERF. PLYWOOD BATTEN LINING";"lb5 -  perf. plywood batten lining";6
+"218";"LB5b - 18mm PERF. PLYWOOD BATTEN LINING";"lb5b -  perf. plywood batten lining";6
+"219";"LB2d/T1.5 - 18mm OSB STUD LINING";"lb2d/t1.5 -  osb stud lining";6
+"220";"LB6d/T1.5 - 18mm PERF. PLY STUD LINING";"lb6d/t1.5 -  perf. ply stud lining";6
+"221";"LF1b - FIRE RATED BATTEN LINING";"lf1b - fire rated batten lining";6
+"222";"L3b - BATTEN LINING WET";"l3b - batten lining wet";6
+"223";"L1b - BATTEN LINING";"l1b - batten lining";6
+"224";"L2d/A50* - STUD LINING";"l2d/a50* - stud lining";3
+"225";"LB7a - 18mm GALVANISED BATTEN LINING";"lb7a -  galvanised batten lining";6
+"226";"Concrete_Cast Insitu_300mm";"concrete cast insitu";2
+"227";"Charred Timber_100x70_600mm Intervals_Temp-Test";"charred timber 100x70  intervals temp-test";1
+"228";"LB3b - 18mm PLYWOOD BATTEN LINING";"lb3b -  plywood batten lining";6
+"229";"LB4d/T1.5 - 18mm PLY STUD LINING";"lb4d/t1.5 -  ply stud lining";6
+"230";"L2e/A40* - STUD LINING";"l2e/a40* - stud lining";3
+"231";"EWS - 142 - 740mm - TPZ - Bulkhead";"ews - 142 -  - tpz - bulkhead";1
+"232";"LB1b - 18mm OSB BATTEN LINING";"lb1b -  osb batten lining";6
+"233";"LB8 - 18mm PVC RENDERED LINING";"lb8 -  pvc rendered lining";6
+"234";"LB3d - 18mm PLYWOOD BATTEN LINING";"lb3d -  plywood batten lining";6
+"235";"LB7 - 18mm GALVANISED BATTEN LINING";"lb7 -  galvanised batten lining";6
+"236";"P1a - STUD PARTITION";"p1a - stud partition";4
+"237";"STR_300 - RETAINING WALL";"str 300 - retaining ";1
+"238";"L4d/A45* - STUD LINING";"l4d/a45* - stud lining";3
+"239";"Concretet_150mm";"concretet";2

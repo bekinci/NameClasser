@@ -11,22 +11,44 @@ clean_walls <- clean_walls %>%
   filter(!grepl("concept", token)) %>% 
   mutate(token = str_replace_all(token, "wall", ""))
 
-#BASE ADIST() METHOD#
+#### BASE ADIST() METHOD ####
 
 walls_dist <- adist(clean_walls$token)
 colnames(walls_dist) <- clean_walls$Type
 rownames(walls_dist) <- clean_walls$Type
 
-wall_clust <- hclust(as.dist(walls_dist))
+#write.csv2(x = walls_dist, file = "distance_mat.csv")
 
-plot(wall_clust, main = NULL, sub = NULL, xlab = NULL, ylab= NULL)
+
+wall_clust <- hclust(as.dist(walls_dist), method = "ward.D")
+
+df_clust <- tibble(clean_walls, cutree(wall_clust, h =200)) %>% 
+  rename(cluster = `cutree(wall_clust, h = 200)`)
+
+#write.csv2(x = df_clust, file = "clusters.csv")
+
+### PLOT ###
+plot(wall_clust, main = NULL, sub = NULL, xlab = NULL, ylab= NULL, lwd = 1)
+rect.hclust(wall_clust,k= 6,border = 2:6)
+
+plotly::ggplotly(ggdendro::ggdendrogram(wall_clust))
+
+## CIRCULAR PLOT ##
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("ggtree")
+
+ggtree::ggtree(wall_clust, layout = 'circular')
+
+
 
 library(ape)
 library(cluster)
 plot(as.phylo(wall_clust), type = "fan")
 
 
-#STRINGDIST METHOD#
+####STRINGDIST METHOD####
 library(stringdist)
 
 expand_wall <- expand.grid(clean_walls$token,clean_walls$token) %>% 
@@ -63,10 +85,13 @@ heatmap(mat_lv)
 #### NETWORK GRAPH ####
 library(igraph)
 
-#BY MATRIX#
+###BY MATRIX###
 graph_matlv <- graph.adjacency(mat_lv, mode = "undirected", weighted = T)
-matlv_clust <- cluster_edge_betweenness(graph_matlv, weights = E(graph_matlv)$weight, directed = F)
-saveRDS(matlv_clust, "graph_cluster.RDS")
+
+#matlv_clust <- cluster_edge_betweenness(graph_matlv, weights = E(graph_matlv)$weight, directed = F)
+#saveRDS(matlv_clust, "graph_cluster.RDS")
+
+readRDS("graph_cluster.RDS")
 
 plot(matlv_clust, graph_matlv, 
      layout =  layout.fruchterman.reingold, 
@@ -76,7 +101,7 @@ plot(matlv_clust, graph_matlv,
      vertex.shape = "none")
 
 
-#BY DATA FRAME#
+###BY DATA FRAME###
 graph_prep <- wall_lv %>% 
   filter(sim != 0) %>% 
   rename(weight = sim) 
